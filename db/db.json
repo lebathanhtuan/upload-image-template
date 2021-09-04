@@ -1,0 +1,277 @@
+{
+  "users": [
+    {
+      "email": "lebathanhtuan@gmail.com",
+      "password": "$2a$10$gTMHDW.C3Oc/ff64Z0tX4uT8AUt0ZC10actp9O5jXlwOTlhmaFTFK",
+      "name": "Tuan",
+      "gender": "male",
+      "role": "admin",
+      "cart": [
+        {
+          "id": "010aa515-8027-46a9-ab9f-86fe3b7fa1ab",
+          "productId": 9,
+          "name": "Xiaomi Mi Mix 4",
+          "price": 30000000,
+          "count": 1
+        }
+      ],
+      "createdAt": 1628858791692,
+      "updatedAt": 1628861912252,
+      "id": 1
+    },
+    {
+      "email": "abc@gmail.com",
+      "password": "$2a$10$3vJIn.XbQHnrS1NG2G7rhe4y7D3kg3yIHvdMD3EEJgCPcYhD49aj2",
+      "name": "ABC",
+      "gender": "female",
+      "role": "user",
+      "cart": [
+        {
+          "id": "9c6c1de3-32eb-4595-b611-add7e2dc546e",
+          "productId": 5,
+          "name": "Galaxy Note 20",
+          "price": 20000000,
+          "count": 2
+        },
+        {
+          "id": "05284c72-023e-4b60-90dd-e80d828aae0d",
+          "productId": 2,
+          "name": "iPhone 12 Pro",
+          "price": 20000000,
+          "count": 1
+        }
+      ],
+      "createdAt": 1628858791692,
+      "updatedAt": 1628861887871,
+      "id": 2
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "iPhone"
+    },
+    {
+      "id": 2,
+      "name": "Samsung"
+    },
+    {
+      "name": "Xiaomi",
+      "createdAt": 1628339995854,
+      "updatedAt": 1628339995854,
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "iPhone 12",
+      "categoryId": 1,
+      "price": 10000000,
+      "images": []
+    },
+    {
+      "id": 2,
+      "name": "iPhone 12 Pro",
+      "categoryId": 1,
+      "price": 20000000,
+      "images": []
+    },
+    {
+      "id": 3,
+      "name": "iPhone 12 Mini",
+      "categoryId": 1,
+      "price": 5000000,
+      "images": []
+    },
+    {
+      "id": 4,
+      "name": "Galaxy S21",
+      "categoryId": 2,
+      "price": 10000000,
+      "images": []
+    },
+    {
+      "id": 5,
+      "name": "Galaxy Note 20",
+      "categoryId": 2,
+      "price": 20000000,
+      "images": []
+    },
+    {
+      "id": 6,
+      "name": "Galaxy S10",
+      "categoryId": 2,
+      "price": 5000000,
+      "updatedAt": 1627994800449,
+      "images": []
+    },
+    {
+      "name": "Xiaomi Mi 11 Ultra",
+      "categoryId": 3,
+      "price": 25000000,
+      "createdAt": 1628340146846,
+      "updatedAt": 1628340146847,
+      "id": 7,
+      "images": []
+    },
+    {
+      "name": "Xiaomi Mi Mix 4",
+      "categoryId": 3,
+      "price": 30000000,
+      "createdAt": 1628341401332,
+      "updatedAt": 1628341401332,
+      "id": 9,
+      "images": []
+    },
+    {
+      "name": "Xiaomi mi 10",
+      "categoryId": 3,
+      "price": 4123123,
+      "createdAt": 1628341786040,
+      "updatedAt": 1628341786040,
+      "id": 10,
+      "images": []
+    },
+    {
+      "name": "Xiaomi Ahihi 456",
+      "categoryId": 3,
+      "price": 10000000,
+      "createdAt": 1628512038217,
+      "updatedAt": 1630760473917,
+      "id": 11,
+      "images": []
+    }
+  ],
+  "todos": [
+    {
+      "createAt": 1629115797622,
+      "updateAt": null,
+      "title": "3213",
+      "description": "4123",
+      "createdAt": 1629115797676,
+      "updatedAt": 1629115797676,
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "content": "Ahihi máy đẹp quá",
+      "rating": 5,
+      "userId": 1,
+      "productId": 2
+    },
+    {
+      "id": 3,
+      "content": "Máy xấu bỏ xừ",
+      "rating": 1,
+      "userId": 1,
+      "productId": 1
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "name": "Tuan",
+      "email": "lebathanhtuan@gmail.com",
+      "phoneNumber": "0123456789",
+      "address": "12313",
+      "products": [
+        {
+          "id": "7936af5b-42c7-4fc9-9704-4eea2202958a",
+          "productId": 9,
+          "name": "Xiaomi Mi Mix 4",
+          "price": 30000000,
+          "count": 1
+        }
+      ],
+      "totalPrice": 30000000,
+      "checkoutInfo": "momo",
+      "status": "waiting",
+      "createdAt": 1628858649230,
+      "updatedAt": 1628858649230,
+      "id": 3
+    },
+    {
+      "userId": 2,
+      "name": "ABC",
+      "email": "abc@gmail.com",
+      "phoneNumber": "1321312314",
+      "address": "124123123",
+      "products": [
+        {
+          "id": "f26ba1bc-411f-4411-a69e-dabc9daff005",
+          "productId": 11,
+          "name": "Xiaomi Ahihi",
+          "price": 10000000,
+          "count": 2
+        },
+        {
+          "id": "b40bb188-f2e3-44f4-98ea-11fc92742a31",
+          "productId": 8,
+          "name": "3213",
+          "price": 4123,
+          "count": 1
+        },
+        {
+          "id": "e2f765c5-dc49-4641-b9e0-fb376a177a42",
+          "productId": 6,
+          "name": "Galaxy S10",
+          "price": 5000000,
+          "count": 2
+        }
+      ],
+      "totalPrice": 30004123,
+      "checkoutInfo": "zalo",
+      "status": "waiting",
+      "createdAt": 1628858843753,
+      "updatedAt": 1628858843753,
+      "id": 4
+    },
+    {
+      "userId": 1,
+      "name": "Tuan",
+      "email": "lebathanhtuan@gmail.com",
+      "phoneNumber": "31241231",
+      "address": "312313",
+      "products": [
+        {
+          "id": "4b44c77f-0c9e-4bc5-9a72-4e2e7c78c3d4",
+          "productId": 9,
+          "name": "Xiaomi Mi Mix 4",
+          "price": 30000000,
+          "count": 1
+        }
+      ],
+      "totalPrice": 30000000,
+      "checkoutInfo": "momo",
+      "status": "waiting",
+      "createdAt": 1628861532077,
+      "updatedAt": 1628861532077,
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "name": "Tuan",
+      "email": "lebathanhtuan@gmail.com",
+      "phoneNumber": "414213213",
+      "address": "14123",
+      "products": [
+        {
+          "id": "4b44c77f-0c9e-4bc5-9a72-4e2e7c78c3d4",
+          "productId": 9,
+          "name": "Xiaomi Mi Mix 4",
+          "price": 30000000,
+          "count": 1
+        }
+      ],
+      "totalPrice": 30000000,
+      "checkoutInfo": "zalo",
+      "status": "waiting",
+      "createdAt": 1628861609558,
+      "updatedAt": 1628861609558,
+      "id": 6
+    }
+  ]
+}

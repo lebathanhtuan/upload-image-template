@@ -1,0 +1,3 @@
+export const ORDER_ACTION = {
+  ORDER_PRODUCT: 'ORDER_PRODUCT',
+}
