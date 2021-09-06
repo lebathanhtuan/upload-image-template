@@ -13,6 +13,8 @@ import {
   Image,
 } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
+import SunEditor from 'suneditor-react';
+
 import history from "../../../utils/history";
 import { convertFileToBase64 } from "../../../utils/common";
 
@@ -49,11 +51,11 @@ function ModifyProductPage({ match }) {
   }, [productId]);
 
   useEffect(() => {
-    if (productDetail.data.id) {
+    if (productId && productDetail.data.id) {
       modifyProductForm.resetFields();
       setUploadImage([...productDetail.data.images]);
     }
-  }, [productDetail.data]);
+  }, [productId, productDetail.data]);
 
   async function handleUploadImage(value) {
     if (!["image/png", "image/jpeg"].includes(value.file.type)) {
@@ -68,6 +70,9 @@ function ModifyProductPage({ match }) {
   }
 
   function handleSubmitForm(values) {
+    if (uploadImages.length === 0) {
+      return setUploadError('Ảnh là bắt buộc!');
+    }
     if (productId) {
       dispatch(editProductAction({
         id: productId,
@@ -187,6 +192,31 @@ function ModifyProductPage({ match }) {
             rules={[{ required: true, message: "Please input your price!" }]}
           >
             <InputNumber style={{ width: "100%" }} />
+          </Form.Item>
+          <Form.Item
+            label="Content"
+            name="content"
+          >
+            <SunEditor
+              setOptions={{
+                height: 300,
+                font : [
+                  'Segoe UI',
+                  'Arial',
+                  'tohoma',
+                  'Courier New,Courier'
+                ],
+                buttonList : [
+                  ['font', 'formatBlock', 'fontSize'],
+                  ['bold', 'underline', 'italic', 'strike', 'subscript', 'superscript'],
+                  ['fontColor', 'hiliteColor', 'outdent', 'indent', 'align', 'list', 'table'],
+                  ['link', 'image']
+                ],
+                defaultStyle: `font-family: 'Segoe UI', 'Aria', sans-serif; font-size: 14px;`,
+              }}
+              defaultValue={modifyProductForm.getFieldValue('content')}
+              onChange={(value) => modifyProductForm.setFieldsValue({ content: value })}
+            />
           </Form.Item>
         </Form>
       </div>

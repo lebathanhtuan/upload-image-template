@@ -20,3 +20,9 @@ export function convertBase64ToFile(dataUrl, filename) {
 
   return new File([u8arr], filename, { type: mime });
 }
+
+export function handleStopPropagation(e) {
+  const event = e || window.event;
+  event.cancelBubble = true;
+  if (event.stopPropagation) event.stopPropagation();
+}

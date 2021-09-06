@@ -138,9 +138,10 @@
       "categoryId": 3,
       "price": 10000000,
       "createdAt": 1628512038217,
-      "updatedAt": 1630760473917,
+      "updatedAt": 1630932237038,
       "id": 11,
-      "images": []
+      "images": [],
+      "content": "<p>hello</p>"
     }
   ],
   "todos": [

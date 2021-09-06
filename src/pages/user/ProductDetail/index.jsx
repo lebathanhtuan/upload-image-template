@@ -61,6 +61,12 @@ function ProductDetailPage({ match }) {
       <Button onClick={() => history.goBack()}>
         Quay lại
       </Button>
+      {productDetail.data.images && (
+        <img
+          src={productDetail.data.images[0]}
+          alt={productDetail.data.name}
+        />
+      )}
       <div>Tên sản phẩm: {productDetail.data.name}</div>
       <div>Hãng: {productDetail.data.category?.name}</div>
       <div>

@@ -36,6 +36,8 @@ import { lightTheme, darkTheme } from './styles/themes';
 
 import './App.css';
 import 'antd/dist/antd.css';
+import 'suneditor/dist/css/suneditor.min.css';
+import './styles/suneditor.custom.css'
 
 const THEME = {
   light: lightTheme,
